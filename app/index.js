@@ -8,7 +8,7 @@ var NgComponentGenerator = yeoman.generators.Base.extend({
 
   initializing: function () {
     if (!this.options['skip-message']) {
-      console.log(chalk.magenta('You\'re using the fantastic NgComponent generator.\n'));
+      console.log(chalk.magenta('You\'re using the fantastic NgWebpack generator.\n'));
       console.log(chalk.magenta('Initializing yo-rc.json configuration.\n'));
     }
   },

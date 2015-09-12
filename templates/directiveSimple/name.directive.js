@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('<%= scriptAppName %>')
+module.exports = angular.module('<%= scriptAppName %>')
   .directive('<%= cameledName %>', function () {
     return {
       template: '<div></div>',

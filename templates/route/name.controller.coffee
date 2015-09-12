@@ -1,5 +1,5 @@
 'use strict'
 
-angular.module '<%= scriptAppName %>'
+module.exports = angular.module '<%= scriptAppName %>'
 .controller '<%= classedName %>Ctrl', ($scope) ->
   $scope.message = 'Hello'

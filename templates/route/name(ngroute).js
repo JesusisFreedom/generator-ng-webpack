@@ -1,10 +1,10 @@
 'use strict';
-
-angular.module('<%= scriptAppName %>')
+var template = require('<%= htmlUrl %>');
+module.exports = angular.module('<%= scriptAppName %>')
   .config(function ($routeProvider) {
     $routeProvider
       .when('<%= route %>', {
-        templateUrl: '<%= htmlUrl %>',
+        templateUrl: template,
         controller: '<%= classedName %>Ctrl'
       });
   });

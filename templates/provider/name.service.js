@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('<%= scriptAppName %>')
+module.exports = angular.module('<%= scriptAppName %>')
   .provider('<%= cameledName %>', function () {
 
     // Private variables

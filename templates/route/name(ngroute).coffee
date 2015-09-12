@@ -1,7 +1,9 @@
 'use strict'
-
-angular.module '<%= scriptAppName %>'
+template = require '<%= htmlUrl %>'
+module.exports = angular.module '<%= scriptAppName %>'
 .config ($routeProvider) ->
   $routeProvider.when '<%= route %>',
-    templateUrl: '<%= htmlUrl %>'
+    templateUrl: template
     controller: '<%= classedName %>Ctrl'
+
+require '<%= name %>.controller.coffee'

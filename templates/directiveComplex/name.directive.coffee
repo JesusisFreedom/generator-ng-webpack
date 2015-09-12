@@ -1,7 +1,7 @@
 'use strict'
-
-angular.module '<%= scriptAppName %>'
+template = require '<%= htmlUrl %>'
+module.exports = angular.module '<%= scriptAppName %>'
 .directive '<%= cameledName %>', ->
-  templateUrl: '<%= htmlUrl %>'
+  templateUrl: template
   restrict: 'EA'
   link: (scope, element, attrs) ->
